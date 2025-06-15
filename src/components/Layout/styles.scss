@@ -1,0 +1,13 @@
+@import '../../styles/main.scss';
+
+.layout {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+
+  &__main {
+    background: $color-background;
+    margin-top: 82px;
+    box-sizing: border-box;
+  }
+}

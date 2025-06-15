@@ -1,0 +1,30 @@
+@import '../../styles/main.scss';
+
+.products-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px;
+  margin: 32px 0;
+  box-sizing: border-box;
+
+  &__content {
+    max-width: $screen-xl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  &__title {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-bold;
+    font-size: 28px;
+    color: $color-black-70;
+    margin-bottom: 16px;
+  }
+}

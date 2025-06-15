@@ -1,0 +1,54 @@
+@import '../../styles/main.scss';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px;
+  background: $color-secondary;
+  margin: 32px 0;
+
+  &__content {
+    max-width: $screen-xl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    color: $color-black-90;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $color-black-80;;
+    line-height: 1.8;
+    margin-bottom: 48px;
+  }
+
+  &__paragraph {
+    margin-bottom: 24px;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+}

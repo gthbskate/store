@@ -1,0 +1,26 @@
+// mixins
+@mixin text-primary {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-regular;
+  font-style: $font-style-normal;
+  line-height: 130%;
+}
+
+@mixin button-primary {
+  background-color: $color-primary;
+  color: $color-white-100;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-medium;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-black-20;
+    color: $color-black-90;
+  }
+}

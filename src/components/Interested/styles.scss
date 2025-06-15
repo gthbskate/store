@@ -1,0 +1,34 @@
+@import '../../styles/main.scss';
+
+.interested {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  height: auto;
+  box-sizing: border-box;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    max-width: $screen-xl;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    text-align: left;
+    width: 100%;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-bold;
+    font-size: 28px;
+    color: $color-black-80;
+    text-transform: capitalize;
+    margin: 0;
+    border-bottom: 1px solid $color-black-20;
+    padding: 16px 0;
+  }
+}

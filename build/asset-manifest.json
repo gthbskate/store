@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64eaa90d.css",
+    "main.js": "/static/js/main.b244dc8f.js",
+    "static/js/453.074f229b.chunk.js": "/static/js/453.074f229b.chunk.js",
+    "static/media/store-home-mobile.webp": "/static/media/store-home-mobile.51c177f3d6ce0f87c369.webp",
+    "static/media/store-home.webp": "/static/media/store-home.2c2da52f863ddd961738.webp",
+    "static/media/not-image.png": "/static/media/not-image.124e0c0f789ff35fc1e1.png",
+    "static/media/store-logo.webp": "/static/media/store-logo.736774e4242d7c8861ad.webp",
+    "static/media/transaction.svg": "/static/media/transaction.3ebb47ce4925cb4d4cd2a231604e02ea.svg",
+    "static/media/package.svg": "/static/media/package.eb10069db071781735a54153457e7800.svg",
+    "static/media/support.svg": "/static/media/support.3e3a3357abb10df9943a3fb2d21c10fb.svg",
+    "static/media/search.svg": "/static/media/search.5580ab31039d3e71c14857d5d185f4b5.svg",
+    "index.html": "/index.html",
+    "static/media/cart.svg": "/static/media/cart.e1ef9bc787c8eaf38c860f1e55ea9799.svg",
+    "static/media/twtt.svg": "/static/media/twtt.09e21d8baccd5c8914e0951a0aa279aa.svg",
+    "static/media/arrow-down.svg": "/static/media/arrow-down.058fc9ee368f4a8beb0f6d9ab87bd3e7.svg",
+    "static/media/menu-open.svg": "/static/media/menu-open.1ac235d189d16a54d815b9ab09c26bc9.svg",
+    "static/media/menu-close.svg": "/static/media/menu-close.231a893bfcf270e880d0d92b22f60a2d.svg",
+    "static/media/arrow-up.svg": "/static/media/arrow-up.0141cde0b11cd5e50b037aedc9e39ec7.svg",
+    "static/media/chip.svg": "/static/media/chip.73b4a2cab71d1823f9c459b25c57484f.svg",
+    "static/media/ig.svg": "/static/media/ig.b6b579c03ee7fdfb78eeea07cc945109.svg",
+    "static/media/plus.svg": "/static/media/plus.892a0c8c5cf7eda5aaa1593dded49465.svg",
+    "static/media/fb.svg": "/static/media/fb.cc32bc00866fbeacb2ee30b575db23e2.svg",
+    "static/media/visa.svg": "/static/media/visa.782f5590715d38a1f2891f9984d3d2d5.svg",
+    "static/media/minus.svg": "/static/media/minus.72ccdc7a6fe07060428884e4180045ab.svg",
+    "main.64eaa90d.css.map": "/static/css/main.64eaa90d.css.map",
+    "main.b244dc8f.js.map": "/static/js/main.b244dc8f.js.map",
+    "453.074f229b.chunk.js.map": "/static/js/453.074f229b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64eaa90d.css",
+    "static/js/main.b244dc8f.js"
+  ]
+}

@@ -1,0 +1,74 @@
+@import '../../styles/main.scss';
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px;
+  background: $color-secondary;
+  margin: 32px 0;
+
+  &__content {
+    max-width: $screen-xl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  &__title {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-bold;
+    font-size: 28px;
+    margin-bottom: 16px; 
+    line-height: 42px;
+    color: $color-primary; 
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 64px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    max-width: 100%;
+    
+    &--title {
+      font-family: $font-family-primary;
+      font-weight: $font-weight-semibold;
+      font-size: 24px;
+      margin-bottom: 16px; 
+      line-height: 36px;
+      color: $color-primary; 
+    }
+
+    &--description {
+      font-family: $font-family-primary;
+      font-weight: $font-weight-light;
+      font-size: 18px;
+      margin-bottom: 16px; 
+      line-height: 24px;
+      color: $color-primary; 
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &__item {
+      max-width: 30%;
+    }
+  }
+}

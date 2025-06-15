@@ -1,0 +1,59 @@
+@import '../../styles/main.scss';
+
+.privacy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px;
+  margin: 32px 0;
+
+  &__content {
+    max-width: $screen-xl;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    text-align: left;
+    gap: 16px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  &__list {
+    margin-top: 8px;
+    padding-left: 24px;
+  }
+
+  &__list-item {
+    list-style-type: disc;
+    margin-bottom: 6px;
+  }
+
+  &__link {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+
+  &__footer {
+    margin-top: 24px;
+    text-align: right;
+  }
+}
