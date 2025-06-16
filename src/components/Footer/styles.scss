@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .footer {
   display: flex;
@@ -6,10 +6,10 @@
   align-items: center;
   justify-content: center;
   padding: 64px 16px;
-  background: $color-black-20;
+  background: var.$color-black-20;
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,37 +46,37 @@
     }
 
     &--title {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-bold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-bold;
       font-size: 20px;
-      color: $color-black-70;
+      color: var.$color-black-70;
       margin-bottom: 12px;
     }
 
     &--link {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-regular;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-regular;
       font-size: 16px;
-      color: $color-black-70;
+      color: var.$color-black-70;
       text-decoration: none;
       transition: color 0.3s ease;
       margin: 0;
 
       &:hover {
-        color: $color-black-50;
+        color: var.$color-black-50;
       }
     }
   }
 
   &__copyright {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-regular;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-regular;
     font-size: 14px;
-    color: $color-black-70;
+    color: var.$color-black-70;
     margin-top: 32px;
   }
 
-  @media screen and (min-width: $screen-md) {
+  @media screen and (min-width: var.$screen-md) {
 
     &__links {
       flex-direction: row;

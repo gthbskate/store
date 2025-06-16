@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .layout {
   display: grid;
@@ -6,7 +6,7 @@
   grid-template-rows: auto 1fr auto;
 
   &__main {
-    background: $color-background;
+    background: var.$color-background;
     margin-top: 82px;
     box-sizing: border-box;
   }

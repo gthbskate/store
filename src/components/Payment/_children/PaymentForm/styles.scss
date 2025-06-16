@@ -1,7 +1,7 @@
-@import '../../../../styles/main.scss';
+@use "../../../../styles/main.scss" as var;
 
 .payment-form {
-  background: $color-white-100;
+  background: var.$color-white-100;
   padding: 80px 30px 30px 30px;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -12,14 +12,14 @@
     label {
       display: block;
       font-size: 14px;
-      color: $color-black-60;
+      color: var.$color-black-60;
       margin-bottom: 5px;
     }
 
     input {
       width: 100%;
       padding: 10px;
-      border: 1px solid $color-black-20;
+      border: 1px solid var.$color-black-20;
       border-radius: 5px;
       font-size: 16px;
       box-sizing: border-box;
@@ -27,8 +27,8 @@
 
     input:focus {
       outline: none;
-      border-color: $color-primary;
-      box-shadow: 0 0 0 2px $color-primary;
+      border-color: var.$color-primary;
+      box-shadow: 0 0 0 2px var.$color-primary;
     }
   }
 
@@ -42,18 +42,18 @@
   }
 
   &__error-text {
-    color: $color-red-90;
+    color: var.$color-red-90;
     font-size: 12px;
     margin-top: 3px;
   }
 
   &__submit-btn {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-bold;
     width: 100%;
     padding: 16px;
-    background-color: $color-primary;
-    color: $color-white-100;
+    background-color: var.$color-primary;
+    color: var.$color-white-100;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -61,23 +61,23 @@
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: $color-secondary;
-      color: $color-black-90;
+      background-color: var.$color-secondary;
+      color: var.$color-black-90;
     }
 
     &:disabled {
-      background-color: $color-red-90;
+      background-color: var.$color-red-90;
       cursor: not-allowed;
     }
   }
 
   &__go-to-home-btn {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-bold;
     width: 100%;
     padding: 16px;
-    background-color: $color-primary;
-    color: $color-white-100;
+    background-color: var.$color-primary;
+    color: var.$color-white-100;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -86,12 +86,12 @@
     margin-top: 32px;
 
     &:hover {
-      background-color: $color-secondary;
-      color: $color-black-90;
+      background-color: var.$color-secondary;
+      color: var.$color-black-90;
     }
 
     &:disabled {
-      background-color: $color-red-90;
+      background-color: var.$color-red-90;
       cursor: not-allowed;
     }
   }
@@ -104,13 +104,13 @@
     margin: 20px 0;
 
     &.success {
-      background-color: $color-black-20;
-      color: $color-green-100;
+      background-color: var.$color-black-20;
+      color: var.$color-green-100;
     }
 
     &.error {
-      background-color: $color-black-20;
-      color: $color-red-90;
+      background-color: var.$color-black-20;
+      color: var.$color-red-90;
     }
   }
 }

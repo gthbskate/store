@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .products {
   display: flex;
@@ -9,7 +9,7 @@
   min-height: 100dvh;
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     gap: 16px;
     width: 100%;
     min-height: 100dvh;
@@ -19,10 +19,10 @@
     margin-bottom: 64px;
 
     &--title {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-bold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-bold;
       font-size: 28px;
-      color: $color-black-70;
+      color: var.$color-black-70;
       margin-bottom: 16px;
       text-transform: capitalize;
     }
@@ -30,7 +30,7 @@
     &--divider {
       width: 100%;
       height: 1px;
-      background-color: $color-black-20;
+      background-color: var.$color-black-20;
       margin-bottom: 16px;
     }
   }
@@ -50,8 +50,8 @@
 
     &__control  {
       padding: 6px;
-      border: 1px solid $color-black-30;
-      color: $color-black-70;
+      border: 1px solid var.$color-black-30;
+      color: var.$color-black-70;
       min-width: 220px;
       border-radius: 8px !important;
     }

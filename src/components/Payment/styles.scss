@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .payment {
   display: flex;
@@ -13,7 +13,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     gap: 32px;
     width: 100%;
     height: 100%;

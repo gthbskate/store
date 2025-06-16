@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .cart {
   display: flex;
@@ -9,12 +9,12 @@
   min-height: 100dvh;
   box-sizing: border-box;
   margin: 32px 0;
-  background: $color-black-10;
+  background: var.$color-black-10;
 
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     gap: 32px;
     width: 100%;
     height: 100%;
@@ -25,30 +25,30 @@
       align-items: baseline;
       justify-content: center;
       gap: 18px;
-      background: $color-background;
+      background: var.$color-background;
       padding: 16px;
       border-radius: 16px;
     }
 
     &--cards {
-      background: $color-background;
+      background: var.$color-background;
       padding: 22px 16px;
       border-radius: 16px;
     }
 
     &--total-products {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-semibold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-semibold;
       font-size: 24px;
-      color: $color-black-100;
+      color: var.$color-black-100;
       margin: 0;
     }
 
     &--total-price {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-semibold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-semibold;
       font-size: 24px;
-      color: $color-black-100;
+      color: var.$color-black-100;
       margin: 0;
     }
 
@@ -59,17 +59,17 @@
       justify-content: center;
       align-items: center;
       margin: 0;
-      background: $color-primary;
+      background: var.$color-primary;
       border: none;
-      color: $color-white-100;
-      font-weight: $font-weight-regular;
+      color: var.$color-white-100;
+      font-weight: var.$font-weight-regular;
       border-radius: 4px;
       cursor: pointer;
       height: 46px;
 
       &:hover {
-        color: $color-black-100;
-        background: $color-secondary;
+        color: var.$color-black-100;
+        background: var.$color-secondary;
       }
     }
   }
@@ -80,7 +80,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border-bottom: 1px solid $color-black-30;
+    border-bottom: 1px solid var.$color-black-30;
     padding-bottom: 16px;
 
     &--image {
@@ -127,7 +127,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      border: 1px solid $color-black-30;
+      border: 1px solid var.$color-black-30;
       border-radius: 4px;
       padding: 6px;
       min-width: 122px;
@@ -146,16 +146,16 @@
       border-radius: 4px;
 
       &:hover {
-        color: $color-black-100;
-        background: $color-secondary;
+        color: var.$color-black-100;
+        background: var.$color-secondary;
       }
     }
 
     &--number {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-semibold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-semibold;
       font-size: 22px;
-      color: $color-black-80;
+      color: var.$color-black-80;
       margin: 0;
     }
 
@@ -166,42 +166,42 @@
       justify-content: center;
       align-items: center;
       margin: 0;
-      font-weight: $font-weight-regular;
+      font-weight: var.$font-weight-regular;
       border-radius: 4px;
-      color: $color-black-80;
+      color: var.$color-black-80;
       background: none;
-      border: 1px solid $color-black-70;
+      border: 1px solid var.$color-black-70;
       cursor: pointer;
 
       &:hover {
-        background: $color-primary;
-        color: $color-white-100;
+        background: var.$color-primary;
+        color: var.$color-white-100;
       }
     }
 
     &--title {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-bold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-bold;
       font-size: 32px;
-      color: $color-black-90;
+      color: var.$color-black-90;
       text-transform: capitalize;
       margin: 0;
       text-align: left;
     }
 
     &--product {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-semibold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-semibold;
       font-size: 20px;
-      color: $color-black-80;
+      color: var.$color-black-80;
       margin: 0;
     }
 
     &--description {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-regular;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-regular;
       font-size: 18px;
-      color: $color-black-100;
+      color: var.$color-black-100;
       margin: 0;
     }
   }
@@ -216,23 +216,23 @@
     gap: 32px;
 
     &--title {
-      color: $color-black-100;
-      font-family: $font-family-primary;
-      font-weight: $font-weight-regular;
+      color: var.$color-black-100;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-regular;
       font-size: 32px;
       margin: 0;
     }
 
     &--description {
-      color: $color-black-100;
-      font-family: $font-family-primary;
-      font-weight: $font-weight-regular;
+      color: var.$color-black-100;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-regular;
       font-size: 18px;
       margin: 0;
     }
   }
 
-  @media (min-width: $screen-md) {
+  @media (min-width: var.$screen-md) {
     
     &__content {
       flex-direction: row;

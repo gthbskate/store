@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 // Swiper styles
 .swiper {
@@ -20,13 +20,13 @@
   object-fit: cover;
 }
 
-@media screen and (min-width: $screen-md) {
+@media screen and (min-width: var.$screen-md) {
   .swiper {
     width: 50%;
   }
 }
 
-@media screen and (min-width: $screen-lg) {
+@media screen and (min-width: var.$screen-lg) {
   .swiper {
     width: 100%;
   }

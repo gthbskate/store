@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .page-title {
   display: flex;
@@ -12,7 +12,7 @@
   }
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,10 +23,10 @@
   }
 
   &__text {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-regular;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-regular;
     font-size: 18px;
-    color: $color-black-70;
+    color: var.$color-black-70;
     margin-bottom: 16px;
     margin: 0;
     text-transform: capitalize;

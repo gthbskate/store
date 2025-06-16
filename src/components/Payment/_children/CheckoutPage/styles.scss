@@ -1,11 +1,11 @@
-@import '../../../../styles/main.scss';
+@use "../../../../styles/main.scss" as var;
 
 .checkout {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  background: $color-background;
+  background: var.$color-background;
 
   &__card {
     max-width: 420px;

@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .privacy {
   display: flex;
@@ -10,7 +10,7 @@
   margin: 32px 0;
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -21,7 +21,7 @@
 
   &__title {
     font-size: 36px;
-    font-weight: $font-weight-bold;
+    font-weight: var.$font-weight-bold;
     margin-bottom: 16px;
     text-align: center;
   }
@@ -48,7 +48,7 @@
   }
 
   &__link {
-    color: $color-primary;
+    color: var.$color-primary;
     text-decoration: underline;
   }
 

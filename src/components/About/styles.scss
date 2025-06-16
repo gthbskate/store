@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .about {
   display: flex;
@@ -7,11 +7,11 @@
   justify-content: center;
   margin: 0 auto;
   padding: 16px;
-  background: $color-secondary;
+  background: var.$color-secondary;
   margin: 32px 0;
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,12 +25,12 @@
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 32px;
-    color: $color-black-90;
+    color: var.$color-black-90;
   }
 
   &__text {
     font-size: 18px;
-    color: $color-black-80;;
+    color: var.$color-black-80;;
     line-height: 1.8;
     margin-bottom: 48px;
   }

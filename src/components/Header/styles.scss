@@ -1,5 +1,5 @@
 // Header styles
-@import "../../styles/main.scss";
+@use "../../styles/main.scss" as var;
 
 .header {
   height: 82px;
@@ -12,7 +12,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: $color-white-100;
+  background: var.$color-white-100;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
   z-index: 99;
 
@@ -42,7 +42,7 @@
     width: fit-content;
     height: fit-content;
     aspect-ratio: 1 / 1;
-    background: $color-black-10;
+    background: var.$color-black-10;
     padding: 4px;
     border-radius: 50%;
     box-sizing: border-box;
@@ -59,8 +59,8 @@
       right: -5px;
       width: 20px;
       height: 20px;
-      background: $color-red-70;
-      color: $color-white-100;
+      background: var.$color-red-70;
+      color: var.$color-white-100;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -103,7 +103,7 @@
       opacity: 1;
       top: 82px;
       left: 0;
-      background: rgba($color: #000000, $alpha: .5);
+      background: rgba(var.$color: #000000, var.$alpha: .5);
       min-height: calc(100dvh - 82px);
       width: 100%;
     }
@@ -112,7 +112,7 @@
       opacity: .5;
       top: 82px;
       left: 0;
-      background: rgba($color: #000000, $alpha: .5);
+      background: rgba(var.$color: #000000, var.$alpha: .5);
       min-height: calc(100dvh - 82px);
       width: 0;
     }
@@ -125,7 +125,7 @@
       gap: 18px;
       list-style: none;
       min-height: calc(100dvh - 82px);
-      background: $color-white-100;
+      background: var.$color-white-100;
       transition: width .5s, opacity .5s ease-in-out;
 
       &.open {
@@ -142,12 +142,12 @@
           display: flex;
           text-decoration: none;
           font-size: 18px;
-          color: $color-black-100;
+          color: var.$color-black-100;
           align-items: center;
           justify-content: space-between;
 
           &:hover {
-            color: $color-black-60;
+            color: var.$color-black-60;
           }
         }
       }
@@ -205,7 +205,7 @@
       gap: 16px;
       margin: 16px 0;
       padding: 0 0 0 18px;
-      font-weight: $font-weight-medium;
+      font-weight: var.$font-weight-medium;
     }
 
     &--second-submenu {
@@ -215,11 +215,11 @@
       gap: 16px;
       margin: 16px 0;
       padding: 0 0 0 18px;
-      font-weight: $font-weight-light;
+      font-weight: var.$font-weight-light;
     }
   }
 
-  @media screen and (min-width: $screen-md) {
+  @media screen and (min-width: var.$screen-md) {
 
     &__links {
       display: flex;
@@ -232,13 +232,13 @@
         a {
           text-decoration: none;
           font-size: 18px;
-          color: $color-black-100;
+          color: var.$color-black-100;
           display: flex;
           align-items: center;
           justify-content: center;
 
           &:hover {
-            color: $color-black-60;
+            color: var.$color-black-60;
           }
         }
       }

@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .benefits {
   display: flex;
@@ -7,11 +7,11 @@
   justify-content: center;
   margin: 0 auto;
   padding: 16px;
-  background: $color-secondary;
+  background: var.$color-secondary;
   margin: 32px 0;
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,12 +21,12 @@
   }
 
   &__title {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-bold;
     font-size: 28px;
     margin-bottom: 16px; 
     line-height: 42px;
-    color: $color-primary; 
+    color: var.$color-primary; 
   }
 
   &__list {
@@ -48,25 +48,25 @@
     max-width: 100%;
     
     &--title {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-semibold;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-semibold;
       font-size: 24px;
       margin-bottom: 16px; 
       line-height: 36px;
-      color: $color-primary; 
+      color: var.$color-primary; 
     }
 
     &--description {
-      font-family: $font-family-primary;
-      font-weight: $font-weight-light;
+      font-family: var.$font-family-primary;
+      font-weight: var.$font-weight-light;
       font-size: 18px;
       margin-bottom: 16px; 
       line-height: 24px;
-      color: $color-primary; 
+      color: var.$color-primary; 
     }
   }
 
-  @media (min-width: $screen-md) {
+  @media (min-width: var.$screen-md) {
     &__item {
       max-width: 30%;
     }

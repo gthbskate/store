@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .products-slider {
   display: flex;
@@ -11,7 +11,7 @@
   box-sizing: border-box;
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,10 +21,10 @@
   }
 
   &__title {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-bold;
     font-size: 28px;
-    color: $color-black-70;
+    color: var.$color-black-70;
     margin-bottom: 16px;
   }
 }

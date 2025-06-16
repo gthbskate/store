@@ -1,4 +1,4 @@
-@import '../../../../styles/main.scss';
+@use "../../../../styles/main.scss" as var;
 
 .card {
   perspective: 1000px;
@@ -11,7 +11,7 @@
     height: 240px;
     border-radius: 15px;
     background: linear-gradient(45deg, #4d4d4d, #1a1a1a);
-    color: $color-white-100;
+    color: var.$color-white-100;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -45,8 +45,8 @@
   }
 
   &__number {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-regular;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-regular;
     font-size: 24px;
     letter-spacing: 2px;
     text-align: center;
@@ -56,8 +56,8 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    font-family: $font-family-primary;
-    font-weight: $font-weight-regular;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-regular;
   }
 
   &__holder {
@@ -72,18 +72,18 @@
 
   &__magnetic-strip {
     height: 50px;
-    background: $color-black-100;
+    background: var.$color-black-100;
     margin: 15px -20px;
   }
 
   &__cvc-band {
-    background: $color-white-100;
+    background: var.$color-white-100;
     padding: 10px;
     text-align: right;
-    color: $color-black-100;
+    color: var.$color-black-100;
     margin-top: 15px;
-    font-family: $font-family-primary;
-    font-weight: $font-weight-regular;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-regular;
   }
 
   &__cvc-value {
@@ -94,7 +94,7 @@
   &__disclaimer {
     font-size: 12px;
     text-align: center;
-    color: $color-black-20;
+    color: var.$color-black-20;
     padding: 10px 0;
   }
 

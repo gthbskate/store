@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .main {
   display: flex;
@@ -16,7 +16,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,29 +29,29 @@
   }
 
   &__title {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-bold;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-bold;
     font-size: 36px;
-    color: $color-black-10;
+    color: var.$color-black-10;
     margin-bottom: 16px;
   }
 
   &__description {
-    font-family: $font-family-primary;
-    font-weight: $font-weight-regular;
+    font-family: var.$font-family-primary;
+    font-weight: var.$font-weight-regular;
     font-size: 18px;
-    color: $color-white-100;
+    color: var.$color-white-100;
     margin-bottom: 24px;
     max-width: 600px;
   }
 
   &__button {
     &--products {
-      @include button-primary;
+      @include var.button-primary;
     }
   }
 
-  @media screen and (min-width: $screen-md) {
+  @media screen and (min-width: var.$screen-md) {
     background-image: url('/assets/images/store-home.webp');
   }
 }

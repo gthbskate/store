@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use "../../styles/main.scss" as var;
 
 .contact {
   display: flex;
@@ -10,7 +10,7 @@
   margin: 32px 0;
 
   &__content {
-    max-width: $screen-xl;
+    max-width: var.$screen-xl;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
   &__description {
     text-align: center;
     font-size: 16px;
-    color: $color-black-80; 
+    color: var.$color-black-80; 
   }
 
   &__form {
@@ -44,13 +44,13 @@
 
   &__label {
     margin-bottom: 8px;
-    font-weight: $font-weight-semibold;
+    font-weight: var.$font-weight-semibold;
   }
 
   &__input,
   &__textarea {
     padding: 14px;
-    border: 1px solid $color-black-20;
+    border: 1px solid var.$color-black-20;
     border-radius: 4px;
     font-size: 16px;
     font-family: inherit;
@@ -59,13 +59,13 @@
   &__input:focus,
   &__textarea:focus {
     outline: none;
-    border-color: $color-primary; 
+    border-color: var.$color-primary; 
   }
 
   &__button {
     align-self: flex-start;
-    background-color: $color-primary; 
-    color: $color-white-100; 
+    background-color: var.$color-primary; 
+    color: var.$color-white-100; 
     border: none;
     padding: 14px 24px;
     font-size: 16px;
@@ -74,14 +74,14 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: $color-primary; 
+      background-color: var.$color-primary; 
     }
   }
 
   &__info {
     margin-top: 32px;
     font-size: 16px;
-    color: $color-black-90; 
+    color: var.$color-black-90; 
     display: flex;
     flex-direction: column;
     gap: 8px;
